@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net5.0</TargetFramework>
+        <RootNamespace>Backblaze_Client</RootNamespace>
+        <PackageId>Backblaze_Client</PackageId>
+        <Version>1.0.0</Version>
+        <Authors>Ola-jed</Authors>
+        <Company>Ola-jed</Company>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    </PropertyGroup>
+
+</Project>
