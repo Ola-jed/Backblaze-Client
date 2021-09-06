@@ -31,3 +31,6 @@ private static async Task Main(string[] args)
     await client.Delete(id, fileName);
 }
 ```
+
+## Download
+[Download here](https://www.nuget.org/api/v2/package/Backblaze_Client/1.0.0)
