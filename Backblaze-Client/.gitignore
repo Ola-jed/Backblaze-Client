@@ -28,7 +28,6 @@ x86/
 bld/
 [Bb]in/
 [Oo]bj/
-[Ll]og/
 [Ll]ogs/
 
 # Visual Studio 2015/2017 cache/options directory
@@ -88,7 +87,6 @@ StyleCopReport.xml
 *.tmp
 *.tmp_proj
 *_wpftmp.csproj
-*.log
 *.vspscc
 *.vssscc
 .builds
