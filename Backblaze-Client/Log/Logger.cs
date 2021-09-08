@@ -31,7 +31,6 @@ namespace Backblaze_Client.Log
                 case LogLevel.Medium:
                 {
                     using StreamWriter file = new(LogSaveFileName, append: true);
-                    file.WriteLine("-------------------------------------");
                     file.WriteLine($"{DateTime.Now.ToString(CultureInfo.CurrentCulture)}");
                     file.WriteLine(message);
                     file.WriteLine("-------------------------------------");
@@ -40,12 +39,10 @@ namespace Backblaze_Client.Log
                 case LogLevel.High:
                 {
                     using StreamWriter file = new(LogSaveFileName, append: true);
-                    file.WriteLine("-------------------------------------");
                     file.WriteLine($"{DateTime.Now.ToString(CultureInfo.CurrentCulture)}");
                     file.WriteLine(message);
                     file.WriteLine("-------------------------------------");
                     Console.ForegroundColor = ConsoleColor.Yellow;
-                    Console.WriteLine("-------------------------------------");
                     Console.WriteLine(message);
                     Console.WriteLine("-------------------------------------");
                     return;
