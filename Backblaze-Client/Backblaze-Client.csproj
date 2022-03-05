@@ -1,14 +1,27 @@
 <Project Sdk="Microsoft.NET.Sdk">
-
     <PropertyGroup>
-        <TargetFramework>net5.0</TargetFramework>
+        <TargetFramework>net6.0</TargetFramework>
+        <Nullable>enable</Nullable>
         <RootNamespace>Backblaze_Client</RootNamespace>
         <PackageId>Backblaze_Client</PackageId>
-        <Version>1.0.0</Version>
+        <Version>2.0.0</Version>
         <Authors>Ola-jed</Authors>
         <Company>Ola-jed</Company>
         <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
         <PackageLicenseExpression>MIT</PackageLicenseExpression>
+        <Title>A .net client for Backblaze</Title>
+        <Description>A Package to handle file storage with Backblaze</Description>
+        <PackageProjectUrl>https://github.com/Ola-jed/Backblaze-Client</PackageProjectUrl>
+        <PackageLicense>https://github.com/Ola-jed/Backblaze-Client/blob/master/LICENSE</PackageLicense>
+        <RepositoryUrl>https://github.com/Ola-jed/Backblaze-Client</RepositoryUrl>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
     </PropertyGroup>
-
+    
+    <ItemGroup>
+        <None Include="..\README.md" Pack="true" PackagePath="\" />
+    </ItemGroup>
+    
+    <ItemGroup>
+      <PackageReference Include="Serilog" Version="2.10.0" />
+    </ItemGroup>
 </Project>

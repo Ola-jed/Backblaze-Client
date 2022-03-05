@@ -6,7 +6,7 @@ Api client for [Backblaze](https://www.backblaze.com/) written in C#
 ```c#
 private static async Task Main(string[] args)
 {
-    var config = new BackblazeConfig()
+    var config = new BackblazeConfig
     {
         KeyId = "yourkeyid",
         AppKey = "yourappkey",
@@ -23,7 +23,7 @@ private static async Task Main(string[] args)
     var id = await client.Upload(DateTime.Now.Ticks.ToString()+".jpg", bytes);
     var stream = await client.Download(id);
     
-    const string path = "download.jpeg";
+    var path = "download.jpeg";
     await using var outputFileStream = new FileStream(path, FileMode.CreateNew);
     await stream.CopyToAsync(outputFileStream);
 
@@ -34,3 +34,6 @@ private static async Task Main(string[] args)
 
 ## Download
 [Download here](https://www.nuget.org/api/v2/package/Backblaze_Client/1.0.0)
+
+## Dependencies
+[Serilog](https://serilog.net/)
